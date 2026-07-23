@@ -13,12 +13,15 @@
 <meta property="og:site_name" content="Javier García Lacend — Perito Electricista">
 <meta property="og:title" content="Javier García Lacend — Perito Electricista Licenciado · Lic. 13598">
 <meta property="og:description" content="Todo tipo de trabajo eléctrico, comercial y residencial. Generadores y certificaciones eléctricas en Puerto Rico. Llama 787-363-6910.">
-<meta property="og:url" content="[URL del sitio]">
-<meta property="og:image" content="[URL de imagen 1200x630 — logo o foto de trabajo]">
+<meta property="og:url" content="https://javier-garcia-lacend.vercel.app/">
+<meta property="og:image" content="https://javier-garcia-lacend.vercel.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Javier García Lacend, perito electricista licenciado en Puerto Rico">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Javier García Lacend — Perito Electricista · Lic. 13598">
 <meta name="twitter:description" content="Trabajo eléctrico comercial y residencial, generadores y certificaciones en Puerto Rico. Llama 787-363-6910.">
-<meta name="twitter:image" content="[URL de imagen 1200x630]">
+<meta name="twitter:image" content="https://javier-garcia-lacend.vercel.app/og.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,7 +32,8 @@
   "areaServed": { "@type": "State", "name": "Puerto Rico" },
   "address": { "@type": "PostalAddress", "addressRegion": "PR", "addressCountry": "PR" },
   "knowsLanguage": "es",
-  "url": "[URL del sitio]",
+  "url": "https://javier-garcia-lacend.vercel.app/",
+  "image": "https://javier-garcia-lacend.vercel.app/og.jpg",
   "identifier": { "@type": "PropertyValue", "propertyID": "Licencia Perito Electricista (PR)", "value": "13598" }
 }
 </script>
@@ -78,6 +82,11 @@
   .hero .mist canvas{display:block;width:100%;height:100%}
   .hero .mist-scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,5,15,.94) 0%,rgba(5,5,15,.78) 55%,rgba(5,5,15,.6) 100%)}
   .hero .wrap{position:relative;z-index:2}
+  .hero-grid{display:grid;gap:34px;align-items:center}
+  @media(min-width:900px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:48px}}
+  .hero-shot{margin:0;width:100%;max-width:340px;justify-self:center}
+  @media(min-width:900px){.hero-shot{max-width:430px}}
+  .hero-shot img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid var(--line);box-shadow:0 26px 64px rgba(0,0,0,.58)}
   .hero h1{font-family:Anton,sans-serif;text-transform:uppercase;font-size:clamp(46px,10vw,104px);letter-spacing:.01em;margin:16px 0 0}
   .hero .role{font-family:Archivo;font-weight:700;font-size:clamp(17px,2.6vw,24px);color:#fff;margin-top:10px}
   .hero .role .lic{color:#ff6b78}
@@ -149,7 +158,8 @@
 <!-- HERO -->
 <header class="hero" id="top">
   <div class="mist" aria-hidden="true"><canvas id="mist-canvas"></canvas><div class="mist-scrim"></div></div>
-  <div class="wrap">
+  <div class="wrap hero-grid">
+   <div class="hero-copy">
     <p class="eyebrow">Perito Electricista Licenciado <b>· Lic. 13598 ·</b> Puerto Rico</p>
     <h1>Javier García<br>Lacend</h1>
     <p class="role">Perito Electricista Licenciado <span class="lic">· Lic. 13598</span></p>
@@ -165,6 +175,14 @@
       <a class="btn btn-line" href="https://wa.me/17873636910?text=Hola%20Javier%2C%20necesito%20una%20cotizaci%C3%B3n%20de%20trabajo%20el%C3%A9ctrico." target="_blank" rel="noopener noreferrer" aria-label="Escribir a Javier por WhatsApp">WhatsApp</a>
     </div>
     <p class="trust"><span class="ok">✓</span> LICENCIADO &nbsp;·&nbsp; <span class="ok">✓</span> COMERCIAL &amp; RESIDENCIAL &nbsp;·&nbsp; <span class="ok">✓</span> CERTIFICACIONES</p>
+   </div>
+   <figure class="hero-shot">
+     <picture>
+       <source srcset="javier-hero.webp" type="image/webp">
+       <img src="javier-hero.jpg" width="800" height="1067" fetchpriority="high" decoding="async"
+            alt="Javier García Lacend, perito electricista licenciado, frente a la bandera de Puerto Rico y El Morro">
+     </picture>
+   </figure>
   </div>
 </header>
 
