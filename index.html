@@ -3,9 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Javier García Lacend — Perito Electricista Licenciado · Lic. 13598 · Puerto Rico</title>
-<meta name="description" content="Javier García Lacend, Perito Electricista Licenciado (Lic. 13598). Todo tipo de trabajo eléctrico comercial y residencial, generadores y certificaciones eléctricas en Puerto Rico. Llama 787-363-6910.">
+<title>Javier García Lacend · Perito Electricista Lic. 13598 PR</title>
+<meta name="description" content="Perito electricista licenciado (Lic. 13598) en Puerto Rico. Trabajo eléctrico comercial y residencial, generadores y certificaciones. Llama 787-363-6910.">
 <meta name="theme-color" content="#0B2545">
+<link rel="canonical" href="https://javier-garcia-lacend.vercel.app/">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 120'%3E%3Crect width='100' height='120' fill='%230B2545'/%3E%3Cpath d='M18 108 L27 52 L53 52 L62 108 Z' fill='%23ffffff'/%3E%3Ccircle cx='40' cy='46' r='13' fill='%23CE1126'/%3E%3Crect x='12' y='108' width='58' height='7' fill='%23ffffff'/%3E%3C/svg%3E">
 <!-- Social share (Open Graph / Twitter) -->
 <meta property="og:type" content="website">
@@ -40,7 +42,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@700;800&family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --navy:#0B2545;--navy-2:#071A33;--red:#CE1126;--red-d:#A50E1F;
@@ -88,6 +90,7 @@
   .hero-shot{margin:0;width:100%;max-width:340px;justify-self:center}
   @media(min-width:900px){.hero-shot{max-width:430px}}
   .hero-shot img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid var(--line);box-shadow:0 26px 64px rgba(0,0,0,.58)}
+  .nb{display:block}
   .hero h1{font-family:Anton,sans-serif;text-transform:uppercase;font-size:clamp(46px,10vw,104px);letter-spacing:.01em;margin:16px 0 0}
   .hero .role{font-family:Archivo;font-weight:700;font-size:clamp(17px,2.6vw,24px);color:#fff;margin-top:10px}
   .hero .role .lic{color:#ff6b78}
@@ -137,7 +140,7 @@
   footer .mut{color:#9fb2c9;font-size:14px}
   footer a{color:#dbe4ef;text-decoration:none;display:block;padding:11px 0;font-size:14px}
   footer a:hover{color:#fff}
-  footer h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7f93aa;margin:0 0 8px}
+  footer .fh{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7f93aa;margin:0 0 8px}
   /* sticky mobile call bar */
   .callbar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border-top:1px solid var(--line)}
   .callbar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 15px calc(15px + env(safe-area-inset-bottom));font-weight:700;text-decoration:none;font-size:16px}
@@ -162,7 +165,7 @@
   <div class="wrap hero-grid">
    <div class="hero-copy">
     <p class="eyebrow">Perito Electricista Licenciado <b>· Lic. 13598 ·</b> Puerto Rico</p>
-    <h1>Javier García<br>Lacend</h1>
+    <h1>Javier García <span class="nb">Lacend</span></h1>
     <p class="role">Perito Electricista Licenciado <span class="lic">· Lic. 13598</span></p>
     <p class="pitch">Todo tipo de trabajo eléctrico, comercial y residencial. Generadores eléctricos y certificaciones eléctricas — hecho a código, seguro y bien hecho.</p>
     <div class="chips">
@@ -220,7 +223,7 @@
     <p class="kicker">Por qué Javier</p>
     <div class="why-grid">
       <div>
-        <h2 class="big">Un perito<br>licenciado.</h2>
+        <h2 class="big">Un perito <span class="nb">licenciado.</span></h2>
         <p class="lede" style="margin-top:16px;color:rgba(255,255,255,.82)">Cuando llamas a Javier, hablas directamente con el perito que hace el trabajo. Sin intermediarios: un profesional licenciado que te dice claro qué necesitas, lo hace bien, y responde por su trabajo.</p>
         <ul class="pts">
           <li>Perito Electricista Licenciado — Lic. 13598</li>
@@ -263,13 +266,13 @@
       <p class="mut" style="margin-top:8px">Perito Electricista Licenciado · Lic. 13598<br>Puerto Rico</p>
     </div>
     <div>
-      <h4>Servicios</h4>
+      <h3 class="fh">Servicios</h3>
       <span class="mut" style="font-size:14px;line-height:2">Trabajos eléctricos<br>Comercial y residencial<br>Generadores<br>Certificaciones</span>
     </div>
     <div>
-      <h4>Contacto</h4>
+      <h3 class="fh">Contacto</h3>
       <a href="tel:+17873636910">☎ 787-363-6910</a>
-      <a href="https://wa.me/17873636910" target="_blank" rel="noopener noreferrer" aria-label="Escribir a Javier por WhatsApp">WhatsApp</a>
+      <a href="https://wa.me/17873636910?text=Hola%20Javier%2C%20necesito%20una%20cotizaci%C3%B3n%20de%20trabajo%20el%C3%A9ctrico." target="_blank" rel="noopener noreferrer" aria-label="Escribir a Javier por WhatsApp">WhatsApp</a>
       <a href="mailto:lacend.pe@gmail.com">✉ lacend.pe@gmail.com</a>
       <span class="mut" style="font-size:13px">Lic. 13598</span>
     </div>
@@ -279,7 +282,7 @@
 <!-- STICKY MOBILE CALL BAR -->
 <div class="callbar">
   <a class="c1" href="tel:+17873636910" aria-label="Llamar a Javier">☎ Llamar</a>
-  <a class="c2" href="https://wa.me/17873636910?text=Hola%20Javier%2C%20necesito%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener noreferrer" aria-label="Escribir a Javier por WhatsApp">WhatsApp</a>
+  <a class="c2" href="https://wa.me/17873636910?text=Hola%20Javier%2C%20necesito%20una%20cotizaci%C3%B3n%20de%20trabajo%20el%C3%A9ctrico." target="_blank" rel="noopener noreferrer" aria-label="Escribir a Javier por WhatsApp">WhatsApp</a>
 </div>
 
 <script>
